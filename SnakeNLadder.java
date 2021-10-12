@@ -5,6 +5,7 @@ public class SnakeNLadder {
 		
 		//variables
 		int positionPlayer1 = 0;
+		int countDiceRolled1 = 0;
 		int finalPosition = 100;
 
 		//loops execute till final position
@@ -31,6 +32,11 @@ public class SnakeNLadder {
 				default:	//no play
 					positionPlayer1 += 0;
 			}
+			System.out.println("Position of the Player token : " + start_pos + " || Option value is " + check_opt + " || Dice value " + dice_value);
+			
+			countDiceRolled1++;
 		}
+		
+		System.out.println("Player rolls the dice " + count_dice_rolled + " times to win the game.");
 	}
 }
