@@ -20,6 +20,8 @@ public class SnakeNLadder {
 			switch(check_opt) {
 				case 1:		//ladder
 					positionPlayer1 += dice_value;
+					if(positionPlayer > finalPosition)
+						positionPlayer -= dice_value;
 					break;
 				case 2:		//snake
 					positionPlayer1 -= dice_value;
