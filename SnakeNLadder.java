@@ -8,7 +8,7 @@ public class SnakeNLadder {
 		int finalPosition = 100;
 
 		//loops execute till final position
-		while(start_pos != final_pos){
+		while(positionPlayer1 != finalPosition){
 
 			// Random Dice value between 1-6
 			int dice_value = (int) Math.floor((Math.random()*6) + 1);
