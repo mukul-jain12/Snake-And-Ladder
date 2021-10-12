@@ -9,7 +9,7 @@ public class SnakeNLadder {
 		int finalPosition = 100;
 
 		//loops execute till final position
-		while(start_pos != final_pos){
+		while(positionPlayer1 != finalPosition){
 
 			// Random Dice value between 1-6
 			int dice_value = (int) Math.floor((Math.random()*6) + 1);
@@ -32,11 +32,11 @@ public class SnakeNLadder {
 				default:	//no play
 					positionPlayer1 += 0;
 			}
-			System.out.println("Position of the Player token : " + start_pos + " || Option value is " + check_opt + " || Dice value " + dice_value);
+			System.out.println("Position of the Player token : " + positionPlayer1 + " || Option value is " + check_opt + " || Dice value " + dice_value);
 			
 			countDiceRolled1++;
 		}
 		
-		System.out.println("Player rolls the dice " + count_dice_rolled + " times to win the game.");
+		System.out.println("Player rolls the dice " + countDiceRolled1 + " times to win the game.");
 	}
 }
