@@ -8,7 +8,7 @@ public class SnakeNLadder {
 		int finalPosition = 100;
 
 		//loops execute till final position
-		while(start_pos != final_pos){
+		while(positionPlayer1 != finalPosition){
 
 			// Random Dice value between 1-6
 			int dice_value = (int) Math.floor((Math.random()*6) + 1);
@@ -20,8 +20,8 @@ public class SnakeNLadder {
 			switch(check_opt) {
 				case 1:		//ladder
 					positionPlayer1 += dice_value;
-					if(positionPlayer > finalPosition)
-						positionPlayer -= dice_value;
+					if(positionPlayer1 > finalPosition)
+						positionPlayer1 -= dice_value;
 					break;
 				case 2:		//snake
 					positionPlayer1 -= dice_value;
