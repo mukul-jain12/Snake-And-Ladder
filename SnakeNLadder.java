@@ -7,14 +7,15 @@ public class SnakeNLadder {
 		int positionPlayer1 = 0;
 		int finalPosition = 100;
 
-		// Random Dice value between 1-6
-		int dice_value = (int) Math.floor((Math.random()*6) + 1);
-		
-		// Random Option for No play, Ladder, and Snake
-		int check_opt = (int) Math.floor(Math.random()*3);
-		
 		//loops execute till final position
 		while(start_pos != final_pos){
+
+			// Random Dice value between 1-6
+			int dice_value = (int) Math.floor((Math.random()*6) + 1);
+		
+			// Random Option for No play, Ladder, and Snake
+			int check_opt = (int) Math.floor(Math.random()*3);
+			
 			//checking option using case
 			switch(check_opt) {
 				case 1:		//ladder
